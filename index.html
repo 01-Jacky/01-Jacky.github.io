@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Jacky Lee</title>
+<title>Title of the document</title>
 <link href='http://fonts.googleapis.com/css?family=Roboto:100,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
 <style>
@@ -10,21 +10,24 @@
 body{
     background-color: #0B4CAD;
 }
-table{
-    margin-left:auto;
-    margin-right:auto;
-    width:70%;
-
-    font-family: 'Roboto', sans-serif;
+#tableWrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+table{  
+    white-space: nowrap;
+    font-family: 'Lato', sans-serif;
     font-size: 40pt;
     color: white;
-
 }    
 #name{
     font-size: 50pt;
     font-weight: bolder;
     padding-right: 20px;
-    
+    text-align: right;
 }
 .links{
     font-size: 50pt;
@@ -47,7 +50,8 @@ table{
 </head>
 
 <body>
-<table class="center" cellspacing="0px";>
+<div id="tableWrapper">
+<table class="centerTable" cellspacing="0px";>
     <tr>
     <td id = "name";>Jacky Lee</td>
         <td class = "links";>linkedin</td>
@@ -57,7 +61,8 @@ table{
         <td  class="links">github</td>
     </tr>
     </table> 
-
+</div>
 </body>
 
+    
 </html> 
