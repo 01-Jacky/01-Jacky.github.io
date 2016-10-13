@@ -1,3 +1,4 @@
 chernoalpha.github.io
 =================
-Source code: https://github.com/ChernoAlpha/Sandbox
+Files here have been concatted and minified. 
+See full source code at https://github.com/ChernoAlpha/Sandbox
