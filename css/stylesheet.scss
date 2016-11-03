@@ -1,0 +1,235 @@
+$size-mobile: 200px;
+$size-tablet: 600px;
+$size-large: 1000px;
+
+@media screen and (min-width: $size-mobile) {
+  h1{
+    background-color: red;
+  }
+  #page-wrapper {
+    min-width: 10em;
+  }
+  nav{
+    ul li {
+      margin-right: 0em;
+    }
+  }
+}
+
+@media screen and (min-width: $size-tablet){
+  h1{
+    background-color: orange;
+  }
+  #page-wrapper{
+    max-width: 40em;
+  }
+  nav{
+    ul li {
+      margin-right: 2em;
+    }
+  }
+}
+
+@media screen and (min-width: $size-large){
+  h1{
+    background-color: green;
+  }
+  #page-wrapper{
+    max-width: 60em;
+  }
+  nav{
+    ul li {list-style-type: circle;}
+  }
+}
+
+#page-wrapper {
+  //margin: 5em 20px;
+  margin: auto;
+  margin-top: 3em;
+}
+
+main{
+  border-style: dotted;
+  //float: left;
+  margin-right: 1em;
+}
+
+nav{
+  border-style: dotted;
+  display: inline-block;
+  margin-left: 0;
+  margin-bottom: 1em;
+  //float: right;
+
+  ul{
+    padding: 0;
+    li{
+      display: inline;
+    }
+  }
+
+  aside{
+    border-style: dotted;
+    margin-top: 3em;
+  }
+}
+
+/********* About Page *********/
+img {
+  width: 200px;
+  height: 200px;
+}
+
+/********* For Skills Page *********/
+.skills-section {
+  float: left;
+  //margin: 10px;
+  //padding: 10px;
+  //max-width: 300px;
+  //height: 300px;
+  //border: 1px solid black;
+}
+
+
+
+//
+///***************** MEDIA QUERIES *****************/
+///* for 980px or less */
+//@media screen and (max-width: 980px) {
+//  #page-wrapper {
+//    width: 94%;
+//  }
+//  #main {
+//    width: 65%;
+//  }
+//  #nav {
+//    width: 30%;
+//  }
+//
+//}
+//
+///* for 700px or less */
+//@media screen and (max-width: 700px) {
+//  #main {
+//    width: auto;
+//    float: none;
+//  }
+//  #nav {
+//    width: auto;
+//    float: none;
+//  }
+//
+//}
+//
+///* for 480px or less */
+//@media screen and (max-width: 480px) {
+//  #nav {
+//    display: none;
+//  }
+//}
+
+
+
+
+
+
+
+
+//body {
+//  font: 1em/150% Arial, Helvetica, sans-serif;
+//}
+//a {
+//  color: #669;
+//  text-decoration: none;
+//}
+//a:hover {
+//  text-decoration: underline;
+//}
+//h1 {
+//  font: bold 36px/100% Arial, Helvetica, sans-serif;
+//}
+//
+///************************************************************************************
+//STRUCTURE
+//*************************************************************************************/
+//#pagewrap {
+//  padding: 5px;
+//  width: 960px;
+//  margin: 20px auto;
+//}
+//#header {
+//  height: 180px;
+//}
+//#content {
+//  width: 600px;
+//  float: left;
+//}
+//#sidebar {
+//  width: 300px;
+//  float: right;
+//}
+//#footer {
+//  clear: both;
+//}
+//
+///************************************************************************************
+//MEDIA QUERIES
+//*************************************************************************************/
+///* for 980px or less */
+//@media screen and (max-width: 980px) {
+//
+//  #pagewrap {
+//    width: 94%;
+//  }
+//  #content {
+//    width: 65%;
+//  }
+//  #sidebar {
+//    width: 30%;
+//  }
+//
+//}
+//
+///* for 700px or less */
+//@media screen and (max-width: 700px) {
+//
+//  #content {
+//    width: auto;
+//    float: none;
+//  }
+//  #sidebar {
+//    width: auto;
+//    float: none;
+//  }
+//
+//}
+//
+///* for 480px or less */
+//@media screen and (max-width: 480px) {
+//
+//  #header {
+//    height: auto;
+//  }
+//  h1 {
+//    font-size: 24px;
+//  }
+//  #sidebar {
+//    display: none;
+//  }
+//
+//}
+//
+///* border & guideline (you can ignore these) */
+//#content {
+//  background: #f0efef;
+//}
+//#sidebar {
+//  background: #f0efef;
+//}
+//#header, #content, #sidebar {
+//  margin-bottom: 5px;
+//}
+//#pagewrap, #header, #content, #sidebar, #footer {
+//  border: solid 1px #ccc;
+//}
+

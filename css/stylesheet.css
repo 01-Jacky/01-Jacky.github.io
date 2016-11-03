@@ -1,0 +1,58 @@
+@media screen and (min-width: 200px) {
+  h1 {
+    background-color: red; }
+
+  #page-wrapper {
+    min-width: 10em; }
+
+  nav ul li {
+    margin-right: 0em; } }
+@media screen and (min-width: 600px) {
+  h1 {
+    background-color: orange; }
+
+  #page-wrapper {
+    max-width: 40em; }
+
+  nav ul li {
+    margin-right: 2em; } }
+@media screen and (min-width: 1000px) {
+  h1 {
+    background-color: green; }
+
+  #page-wrapper {
+    max-width: 60em; }
+
+  nav ul li {
+    list-style-type: circle; } }
+#page-wrapper {
+  margin: auto;
+  margin-top: 3em; }
+
+main {
+  border-style: dotted;
+  margin-right: 1em; }
+
+nav {
+  border-style: dotted;
+  display: inline-block;
+  margin-left: 0;
+  margin-bottom: 1em; }
+  nav ul {
+    padding: 0; }
+    nav ul li {
+      display: inline; }
+  nav aside {
+    border-style: dotted;
+    margin-top: 3em; }
+
+/********* About Page *********/
+img {
+  width: 200px;
+  height: 200px; }
+
+/********* For Skills Page *********/
+.skills-section {
+  float: left; }
+
+/*# sourceMappingURL=stylesheet.css.map */
