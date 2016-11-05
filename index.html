@@ -7,47 +7,38 @@
   <meta name="description" content="Portfolio">
   <title>Jacky Lee Portfolio</title>
 
-  <!--Stylesheets -->
-  <!--<link rel='stylesheet' href='//fonts.googleapis.com/css?family=font1|font2|etc' type='text/css'>-->
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-  <!-- AngularJS in the head to prevent flashes of incomplete content-->
-  <!-- Avoid too much scripts in the head; Delays page rendering-->
+
+  <!-- AngularJS to help with building SPA-->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+
+  <!-- External JS -->
   <script src="js/app.js"></script>
-  <script src="js/aboutController.js"></script>
   <script src="js/experienceController.js"></script>
-  <script src="js/skillsController.js"></script>
-  <!--No projects to show off yet-->
-  <!--<script src="js/projectsController.js"></script>-->
   <script src="js/contactController.js"></script>
 </head>
 
-
-<!-- LiveReload script must go before body to watch changes and auto refresh browser-->
-<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
-
-
 <body ng-app="myApp" ng-controller="MainPageController">
-
 <div id="page-wrapper" >
-
   <header>
     <h1>Jacky Lee</h1>
   </header>
 
   <nav>
-    <ul>
+    <!-- Used http://www.w3schools.com/howto/howto_js_topnav.asp as reference for responsive hamburger menu -->
+    <ul class="topnav" id="myTopnav">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <!--<li><a href="#projects">Projects</a></li>-->
       <li><a href="#contact">Contact</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" ng-click="displayDropdown()">&#9776;</a>
+      </li>
     </ul>
-
-    <!--<aside>-->
-    <!--Contact me-->
-    <!--</aside>-->
   </nav>
 
   <main id="content">
@@ -55,19 +46,15 @@
   </main>
 </div>
 
-
-<!-- External libraries -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-
 <!-- Onload Events-->
-<script type="text/javascript">
-  function autorun() {
+<!-- Not in use currently-->
+<!--<script type="text/javascript">-->
+  <!--function autorun() {-->
 
-  }
-  if (window.addEventListener) window.addEventListener("load", autorun, false);
-  else if (window.attachEvent) window.attachEvent("onload", autorun);
-  else window.onload = autorun;
-</script>
-
+  <!--}-->
+  <!--if (window.addEventListener) window.addEventListener("load", autorun, false);-->
+  <!--else if (window.attachEvent) window.attachEvent("onload", autorun);-->
+  <!--else window.onload = autorun;-->
+<!--</script>-->
 </body>
 </html>

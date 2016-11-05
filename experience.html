@@ -1,50 +1,89 @@
-<h1>Experience</h1>
+<div id="experiencePage">
+  <section>
+    <div class="where-you-worked">
+      <div class="descriptions">
+        <h2>Software Engineering Intern</h2>
+        <h2>ViaSat</h2>
+        <p>Summer 2016</p>
+      </div>
+      <img src="img/viasat.png" alt="ViaSat Logo">
+    </div>
+    <ul>
+      <li>Skills used: C#, SQL, JavaScript, HTML, CSS, Backbone.js, data visualization (Plotly.js)</li>
+      <li>Implemented user authentication and authorization for an internal data analytics app that had no security.</li>
+      <li>Created new table schema, SQL procedures, web API, and front-end to allow user to request access.</li>
+      <li>Project secured company data by forcing users to sign in with valid corporate SSO account and ensuring server only respond with user accessible data and charts.</li>
+    </ul>
+    <button ng-click="displayModal('viasat')">Project summary</button>
+  </section>
 
-<section>
-  <h2>Software Engineering Intern</h2>
-  <h3>ViaSat</h3>
-  <p>2015 - 2016</p>
-  <ul>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-  </ul>
-</section>
+  <section>
+    <div class="where-you-worked">
+      <div class="descriptions">
+        <h2>Software Engineering Intern</h2>
+        <h2>NASA JPL</h2>
+        <p>Aug 2015 - May 2016</p>
+      </div>
+      <img class="jpl" src="img/jpl.png" alt="JPL Logo">
+    </div>
+    <ul>
+      <li>Skills used: JavaScript, HTML, CSS, AngularJS, data visualization (C3.js), Unit-Testing</li>
+      <li>Prototyped new responsive single-page web app for engineering and mission teams to view launch vehicle
+        specifications, filter launch opportunities, and access mission documents.</li>
+      <li>Dynamically generated content by using the API of our internal engineering ECM platform.</li>
+      <li>Created data visualization such as performance curves that compared data from multiple launch vehicles.</li>
+      <li>Project presentations resulted in additional funding to add a UX designer and developer to the team.</li>
+    </ul>
+    <button ng-click="displayModal('jpl2')">Project summary</button>
+  </section>
 
-<section>
-  <h2>Software Engineering Intern</h2>
-  <h3>NASA JPL</h3>
-  <p>2015 - 2016</p>
-  <ul>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-  </ul>
-</section>
-
-<section>
-  <h2>Software Engineering Intern</h2>
-  <h3>NASA GRC</h3>
-  <p>2015 - 2016</p>
-  <ul>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-  </ul>
-</section>
+  <section>
+    <div class="where-you-worked">
+      <div class="descriptions">
+        <h2>Software Engineering Intern</h2>
+        <h2>NASA Glenn Research Center</h2>
+        <p>Summer 2015</p>
+      </div>
+      <img class="nasa" src="img/nasa.png" alt="JPL Logo">
+    </div>
+    <ul>
+      <li>Skills used: C#, .NET WPF</li>
+      <li>Developed a new solver feature for the Optical Satellite Link Assessment Tool to calculate an optimal input
+        value that satisfies a specific link margin constraint.</li>
+      <li>Implemented a new dynamic background irradiance simulation using the API of a physics-based software</li>
+      <li>Solver feature eliminated the hassle of manually testing different input values for what-if analysis.</li>
+      <li>Improved result accuracy by a few percentage points after using background irradiance simulation.</li>
+    </ul>
+    <button ng-click="displayModal('grc')">Project summary</button>
+  </section>
 
 
-<section>
-  <h2>Software Engineering Intern</h2>
-  <h3>NASA JPL</h3>
-  <p>2015 - 2016</p>
-  <ul>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-    <li>Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code Wrote a lot of code </li>
-  </ul>
-</section>
+  <section>
+    <div class="where-you-worked">
+      <div class="descriptions">
+        <h2>Software Engineering Intern</h2>
+        <h2>NASA JPL</h2>
+        <p>Sep 2014 - Dec 2014</p>
+      </div>
+      <img class="jpl" src="img/jpl.png" alt="JPL Logo">
+    </div>
+    <ul>
+      <li>Skills used: MATLAB, Linux</li>
+      <li>Converted a series of MATLAB data validation scripts into a single GUI application for the Airborne Visible Infrared Imaging Spectrometer (AVIRIS) project.</li>
+      <li>Refactored scripts to an OOP style for easier maintenance and upgrades.</li>
+      <li>Eliminated user confusion on how to use the various scripts by providing a single GUI application.</li>
+    </ul>
+    <button ng-click="displayModal('jpl')">Project summary</button>
+  </section>
+</div>
+
+
+<!-- Modal Template -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">x</span>
+    <p id="modalMsg"></p>
+  </div>
+
+</div>

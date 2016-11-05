@@ -1,58 +1,218 @@
-@media screen and (min-width: 200px) {
-  h1 {
-    background-color: red; }
+body {
+  background-color: #F5F3EE;
+  color: black;
+  font-family: 'Roboto', sans-serif; }
 
-  #page-wrapper {
-    min-width: 10em; }
+body.md-default-theme, body {
+  background-color: #F5F3EE; }
 
-  nav ul li {
-    margin-right: 0em; } }
-@media screen and (min-width: 600px) {
-  h1 {
-    background-color: orange; }
-
-  #page-wrapper {
-    max-width: 40em; }
-
-  nav ul li {
-    margin-right: 2em; } }
-@media screen and (min-width: 1000px) {
-  h1 {
-    background-color: green; }
-
-  #page-wrapper {
-    max-width: 60em; }
-
-  nav ul li {
-    list-style-type: circle; } }
 #page-wrapper {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 3em; }
+  @media screen and (max-width: 400px) {
+    #page-wrapper {
+      max-width: 20em; } }
+  @media screen and (min-width: 400px) and (max-width: 870px) {
+    #page-wrapper {
+      max-width: 30em; } }
+  @media screen and (min-width: 870px) {
+    #page-wrapper {
+      max-width: 55em; } }
 
-main {
-  border-style: dotted;
-  margin-right: 1em; }
+header h1 {
+  margin: 0 auto;
+  margin-bottom: 0.3em;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  min-width: 10em; }
 
 nav {
-  border-style: dotted;
-  display: inline-block;
-  margin-left: 0;
+  border-bottom: solid;
+  padding-bottom: 0.1em;
   margin-bottom: 1em; }
   nav ul {
-    padding: 0; }
-    nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  nav ul li {
+    float: left; }
+  nav ul li a {
+    color: black;
+    display: inline-block;
+    text-decoration: none; }
+  nav ul li.icon {
+    display: none; }
+  @media screen and (max-width: 400px) {
+    nav ul.topnav.responsive {
+      position: relative; }
+    nav ul.topnav.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    nav ul.topnav.responsive li {
+      float: none;
       display: inline; }
-  nav aside {
-    border-style: dotted;
-    margin-top: 3em; }
+    nav ul.topnav.responsive li a {
+      display: block;
+      text-align: left; }
+    nav ul li:not(:first-child) {
+      display: none; }
+    nav ul li.icon {
+      float: right;
+      display: inline-block; } }
+  @media screen and (min-width: 400px) and (max-width: 870px) {
+    nav ul li:not(:last-child) {
+      margin-right: 1em; } }
+  @media screen and (min-width: 870px) {
+    nav ul li {
+      font-size: 1.3em; }
+    nav ul li:not(:last-child) {
+      margin-right: 4.5em; } }
+
+main {
+  color: black; }
 
 /********* About Page *********/
-img {
-  width: 200px;
-  height: 200px; }
+#aboutPage article, #aboutPage p {
+  margin-top: 0;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+@media screen and (max-width: 400px) {
+  #aboutPage {
+    margin-top: 1em; }
+    #aboutPage img {
+      display: none; }
+    #aboutPage article {
+      width: 100%;
+      display: block; } }
+@media screen and (min-width: 400px) and (max-width: 870px) {
+  #aboutPage img {
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+  #aboutPage article {
+    width: 100%;
+    display: block; } }
+@media screen and (min-width: 870px) {
+  #aboutPage img {
+    width: 250px;
+    vertical-align: top;
+    margin-right: 1em; }
+  #aboutPage article {
+    min-width: 10em;
+    width: 35em;
+    display: inline-block; } }
+
+/********* For Experience Page *********/
+#experiencePage h2, #experiencePage h3 {
+  margin: 0; }
+#experiencePage p {
+  margin: 0;
+  margin-top: 0.5em; }
+#experiencePage section {
+  margin-bottom: 40px; }
+#experiencePage .where-you-worked {
+  display: inline-block;
+  position: relative; }
+#experiencePage .descriptions {
+  float: left; }
+#experiencePage img {
+  height: 3em;
+  float: right;
+  margin-left: 2em; }
+#experiencePage .jpl {
+  height: 4em; }
+#experiencePage .nasa {
+  height: 4.35em; }
+@media screen and (max-width: 870px) {
+  #experiencePage ul {
+    padding-left: 1em; }
+  #experiencePage img {
+    display: none; } }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 35em; }
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
 
 /********* For Skills Page *********/
-.skills-section {
-  float: left; }
+#skillsPage .skills-section {
+  display: inline;
+  float: left;
+  margin: 0.5em;
+  margin-top: 0;
+  width: 15em;
+  min-height: 10em; }
+  #skillsPage .skills-section h2 {
+    margin: 0;
+    margin-bottom: 0.5em; }
+  #skillsPage .skills-section ul {
+    margin-top: 0;
+    padding-left: 1em; }
+@media screen and (max-width: 400px) {
+  #skillsPage {
+    margin-top: 1em; }
+    #skillsPage .skills-section {
+      min-height: inherit;
+      height: inherit; } }
+@media screen and (min-width: 400px) and (max-width: 870px) {
+  #skillsPage .skills-section {
+    width: 12em;
+    min-height: 12em; } }
+@media screen and (min-width: 870px) {
+  #skillsPage .skills-section {
+    height: 10em; } }
+
+/********* For Contact Page *********/
+#contactPage img {
+  height: 2em;
+  width: 2em; }
+#contactPage .icons {
+  margin-bottom: 1em; }
+  #contactPage .icons a {
+    margin-right: 1em; }
 
 /*# sourceMappingURL=stylesheet.css.map */

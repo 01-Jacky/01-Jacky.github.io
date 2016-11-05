@@ -1,13 +1,12 @@
 var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
+  // Routes for creating Single Page Applications
   $routeProvider
     .when("/", {
       templateUrl : "about.html",
-      controller : "aboutController"
     })
     .when("/about", {
       templateUrl : "about.html",
-      controller : "aboutController"
     })
     .when("/experience", {
       templateUrl : "experience.html",
@@ -15,12 +14,10 @@ app.config(function($routeProvider) {
     })
     .when("/skills", {
       templateUrl : "skills.html",
-      controller : "skillsController"
     })
-    .when("/projects", {
-      templateUrl : "projects.html",
-      controller : "projectsController"
-    })
+    // .when("/projects", {
+    //   templateUrl : "projects.html",
+    // })
     .when("/contact", {
       templateUrl : "contact.html",
       controller : "contactController"
@@ -33,6 +30,16 @@ app.config(function($routeProvider) {
 
 app.controller('MainPageController', function MainPageController($scope) {
   $scope.msg = "Main Controller data";
+
+  // For displaying the hamburger menu when screen size gets to mobile size
+  $scope.displayDropdown = function() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 });
 
 
