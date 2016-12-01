@@ -22,6 +22,9 @@ app.config(function($routeProvider) {
       templateUrl : "contact.html",
       controller : "contactController"
     })
+    .when("/users", {
+      templateUrl : "users.html",
+    })
     .otherwise({
       templateUrl : "about.html",
       controller : "aboutController"

@@ -215,4 +215,10 @@ main {
   #contactPage .icons a {
     margin-right: 1em; }
 
+/********* For Contact Page *********/
+#usersPage p, #usersPage table {
+  margin-left: 1em; }
+#usersPage ul {
+  padding-left: 1em; }
+
 /*# sourceMappingURL=stylesheet.css.map */
