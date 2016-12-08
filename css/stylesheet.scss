@@ -299,15 +299,21 @@ main{
   }
 }
 
-/********* For Contact Page *********/
+/********* For Users Page *********/
 #usersPage{
-  p, table{
-    margin-left: 1em;
-  }
-
-
   ul{
     padding-left: 1em;
+  }
+  section{
+    margin-bottom: 2em;
+
+    h2{
+      padding-bottom: 0.1em;
+      text-decoration: underline;
+    }
+    img{
+      width: 600px;
+    }
   }
 }
 
