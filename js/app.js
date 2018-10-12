@@ -3,7 +3,7 @@ app.config(function($routeProvider) {
   // Routes for creating Single Page Applications
   $routeProvider
     .when("/", {
-      templateUrl : "about.html",
+      templateUrl : "experience.html",
     })
     .when("/about", {
       templateUrl : "about.html",
@@ -33,6 +33,9 @@ app.config(function($routeProvider) {
 
 app.controller('MainPageController', function MainPageController($scope) {
   $scope.msg = "Main Controller data";
+    
+  $scope.mailto = "mailto:";
+  $scope.name = "jackyl8@";
 
   // For displaying the hamburger menu when screen size gets to mobile size
   $scope.displayDropdown = function() {

@@ -24,17 +24,36 @@
 <body ng-app="myApp" ng-controller="MainPageController">
 <div id="page-wrapper" >
   <header>
-    <h1>Jacky Lee</h1>
+      <h1 id="name">Jacky Lee</h1>
+      <h3 id="graduate">Computer Science major at UC Irvine, Graduating March 2019</h3>
+<!--
+    <section class="container">
+        <div class="one">        </div>
+        <div class="two"> <p id=graduate>shit</p> </div>
+    </section>
+    <section>
+
+
+    </section>
+-->
   </header>
 
   <nav>
     <!-- Used http://www.w3schools.com/howto/howto_js_topnav.asp as reference for responsive hamburger menu -->
     <ul class="topnav" id="myTopnav">
-      <li><a href="#about">About</a></li>
+<!--      <li><a href="#about">About</a></li>-->
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <!--<li><a href="#projects">Projects</a></li>-->
-      <li><a href="#contact">Contact</a></li>
+<!--      <li><a href="#contact">Contact</a></li>-->
+      <li>
+          <a href="JackyLeeResume.pdf">Resume</a>
+      </li>
+      <li>
+          <a href="https://github.com/01-Jacky"><img id=githubicon class="footer-icons" src="img/GitHub-Mark-32px.bbef8df5.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/jackylee310/"><img id=linkedinicon class="footer-icons" src="img/linkedin.png" alt="linkedIn"></a>
+      </li>
+        
       <li class="icon">
         <a href="javascript:void(0);" ng-click="displayDropdown()">&#9776;</a>
       </li>

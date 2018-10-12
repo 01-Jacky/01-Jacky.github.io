@@ -3,6 +3,13 @@ body {
   color: black;
   font-family: 'Roboto', sans-serif; }
 
+#name{
+    margin-bottom: 5px;
+}
+#graduate{
+    margin-top: 0px;
+}
+
 body.md-default-theme, body {
   background-color: #F5F3EE; }
 
@@ -29,7 +36,7 @@ header h1 {
 nav {
   border-bottom: solid;
   padding-bottom: 0.1em;
-  margin-bottom: 1em; }
+  margin-bottom: 2em; }
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -72,6 +79,39 @@ nav {
 
 main {
   color: black; }
+
+
+#linkedinicon, #githubicon{
+  height: 24px;
+  width:  24px; 
+/*  position:absolute; bottom:0;*/
+}
+
+#contactSection .icons {
+  margin-bottom: 1em; }
+  #contactPage .icons a {
+    margin-right: 1em; }
+
+.container {
+    height: 90px;
+/*    background: aqua;*/
+    margin: auto;
+    padding: 0px;
+}
+.one {
+    width: 35%;
+/*    height: 1000px;*/
+/*    background: red;*/
+    float: left;
+}
+.two {
+    margin-left: 0%;
+    margin-top: 20px;
+    height: 80px;
+/*    background: black;*/
+/*    position:relative*/
+    position: relative;
+}
 
 /********* About Page *********/
 #aboutPage article, #aboutPage p {
@@ -120,7 +160,7 @@ main {
 #experiencePage .descriptions {
   float: left; }
 #experiencePage img {
-  height: 3em;
+/*  height: 4em;*/
   float: right;
   margin-left: 2em; }
 #experiencePage .jpl {
@@ -132,6 +172,26 @@ main {
     padding-left: 1em; }
   #experiencePage img {
     display: none; } }
+
+#amzn{
+    height: auto;
+    width: 170px;
+}
+#viasat{
+    padding-left: 7px;
+    height: 60px;
+    width: auto;
+}
+#bloomberg{
+    padding-top: 15px;
+    padding-left: 7px;
+    height: 30px;
+    width: auto;
+}
+
+.descriptions{
+    width: 300px;
+}
 
 /* The Modal (background) */
 .modal {
@@ -182,7 +242,7 @@ main {
 #skillsPage .skills-section {
   display: inline;
   float: left;
-  margin: 0.5em;
+  margin: 0.8em;
   margin-top: 0;
   width: 15em;
   min-height: 10em; }
