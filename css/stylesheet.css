@@ -268,11 +268,15 @@ main {
 
 /********* For Contact Page *********/
 #contactPage img {
-/*
-  height: 20em;
-  width: 2em; 
-*/
+  height: auto;
+  width: 40em; 
 }
+
+#internwatch  {
+/*    height: auto;*/
+    width: 1000px;
+}
+
 #contactPage .icons {
   margin-bottom: 1em; }
   #contactPage .icons a {
