@@ -268,8 +268,11 @@ main {
 
 /********* For Contact Page *********/
 #contactPage img {
-  height: 2em;
-  width: 2em; }
+/*
+  height: 20em;
+  width: 2em; 
+*/
+}
 #contactPage .icons {
   margin-bottom: 1em; }
   #contactPage .icons a {
